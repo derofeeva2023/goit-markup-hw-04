@@ -133,12 +133,13 @@ margin-left: auto;
         cursor:pointer;
     }
 /* Site contact info*/
-.contact-info a{
+.contact-link{
  color: var(--main-font-color);
     font-weight: 500;
     font-size: 14px;
     line-height:1.14;
     letter-spacing: 0.02em;
+    fill: currentColor;
 }
 .contact-info a:hover, a:focus {
     color:var(--accent-color);
@@ -341,10 +342,10 @@ margin-bottom: 10px;
     border-radius: 50%;
     fill:var(--icon-color);
     }
-    .small-button:hover{
+    .small-button:hover, .small-button:focus{
         background-color: var(--accent-color);
-        fill: currentColor;
-        color: var(--main-light-color);
+        
+        fill: var(--main-light-color);
     }
     
     .button-icon{
@@ -377,7 +378,7 @@ align-items: center;
 justify-content: center;
 display: flex;
 }
-.f-button:hover{
+.f-button:hover, .f-button:focus{
     background-color: var(--accent-color);
 }
 .clients-button{
@@ -402,7 +403,7 @@ justify-content: center;
     display: flex;
     margin: 0;
 }
-.clients-button:hover{
+.clients-button:hover, .clients-button:focus{
  
     border-color:var(--accent-color);
     fill:var(--accent-color);
